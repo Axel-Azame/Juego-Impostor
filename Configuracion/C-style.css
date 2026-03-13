@@ -1,0 +1,176 @@
+#container {
+    margin: 30px auto;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.contenedor-seccion {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+#toggle-switch {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#toggle-switch label {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #1f2937;
+    border: 2px solid #4b5563;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+/* botones y checkbox*/
+input[type="checkbox"] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.lista-categoria input[type="checkbox"] {
+
+    display: inline;
+    margin-right: 8px;
+}
+
+.lista-categoria li {
+    list-style: none;
+    background-color: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.lista-categoria li:hover {
+    background-color: #343454;
+}
+
+#cant-jug {
+    margin-top: 10px;
+}
+
+.lista-categoria label {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.lista-categoria {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.contenedor-lista-jugadores {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.contenedor-lista-jugadores li {
+    list-style: none;
+}
+
+.nombre-jugador {
+    display: none;
+}
+
+.contenedor-validacion {
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 186, 186);
+    border: 1px solid rgb(255, 186, 186);
+    border-radius: 5px;
+}
+
+.contenedor-validacion p {
+    margin: 0;
+    font-size: 13px;
+}
+
+#boton-iniciar {
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-Botones);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton-iniciar:hover {
+    background-color: var(--color-botones-hover);
+}
+
+#boton-iniciar:active {
+    transform: scale(0.95);
+    background-color: var(--color-Botones);
+}

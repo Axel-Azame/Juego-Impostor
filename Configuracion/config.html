@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configuracion</title>
+        <link rel="stylesheet" href="/Presentacion/P-style.css">
+        <link rel="stylesheet" href="../Reglas/R-style.css">
+        <link rel="stylesheet" href="/Configuracion/C-style.css">
+</head>
+
+<body>
+        <a id="configuracion-boton" href="/Presentacion/Presentacion.html"><img src="../assents/arrow-left.svg"
+                        alt=""></a>
+        <div id="container">
+                <h1>Configuración de Juego</h1>
+                <div class="contenedor-seccion">
+                        <label for="cant-jug">1. Cantidad de jugadores</label>
+                        <select id="cant-jug">
+                                <option value="4">4 Jugadores</option>
+                                <option value="5">5 Jugadores</option>
+                                <option value="6">6 Jugadores</option>
+                                <option value="7">7 Jugadores</option>
+                                <option value="8">8 Jugadores</option>
+                                <option value="9">9 Jugadores</option>
+                                <option value="10">10 Jugadores</option>
+                        </select>
+                </div>
+                <div class="contenedor-seccion">
+                        <label>2. Roles especiales:</label>
+                        <div id="toggle-switch">
+                                <input type="checkbox" id="rol-undercover">
+                                <label for="rol-undercover">Incluir Rol Undercover</label>
+                        </div>
+                </div>
+                <div class="contenedor-seccion">
+                        <label for="">3. Selecciona las Categorias de las Palabras</label>
+                        <ul class="lista-categoria" id="listaCategoria">
+                                <li><label><input type="checkbox" name="categoria" value="lugares"
+                                                        checked>Lugares</label></li>
+                                <li><label><input type="checkbox" name="categoria" value="objetos">Objetos</label></li>
+                                <li><label><input type="checkbox" name="categoria" value="animales">Animales</label>
+                                </li>
+                                <li><label><input type="checkbox" name="categoria" value="comida">Comida</label></li>
+                        </ul>
+                </div>
+                <div class="contenedor-seccion">
+                        <label for="">4. Nombre de los Jugadores</label>
+                        <ul class="contenedor-lista-jugadores" id="contenedorListaJugadores">
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-1" data-payer-id="1"
+                                                placeholder="Jugador 1" value="Juan"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-2" data-payer-id="2"
+                                                placeholder="Jugador 2" value="Pedro"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-3" data-payer-id="3"
+                                                placeholder="Jugador 3" value="Luis"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-4" data-payer-id="4"
+                                                placeholder="Jugador 4" value="Ana"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-5" data-payer-id="5"
+                                                placeholder="Jugador 5"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-6" data-payer-id="6"
+                                                placeholder="Jugador 6"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-7" data-payer-id="7"
+                                                placeholder="Jugador 7"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-8" data-payer-id="8"
+                                                placeholder="Jugador 8"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-9" data-payer-id="9"
+                                                placeholder="Jugador 9"></li>
+                                <li class="nombre-jugador"><input type="text" id="nombre-jugador-10" data-payer-id="10"
+                                                placeholder="Jugador 10"></li>
+                        </ul>
+                </div>
+                <div class="contenedor-validacion" style="display: none;">
+                        <p id="mensaje-texto"></p>
+                </div>
+                <button id="boton-iniciar">Guardar e Iniciar Juego</button>
+                <script src="../main-logic.js"></script>
+</body>
+
+</html>

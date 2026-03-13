@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+    <link rel="stylesheet" href="/Presentacion/P-style.css">
+    <link rel="stylesheet" href="V-style.css">
+</head>
+
+<body>
+    <div id="contenedor-confirmacion" style="display: none;">
+        <div id="confirmacion">
+            <p> ¿Estas seguro de que quieres eliminar a <span id="nombre-jugador"
+                    style="color: var(--color-tripulante); font-size: 1.2rem;"></span>?</p>
+            <div id="contenedor-botones">
+                <button id="confirmar">Confirmar</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div id="contenedor-rol-expulsado" style="display: none;">
+        <div id="rol-expulsado">
+            <h1>¡El jugador ha sido expulsado!</h1>
+            <p><span id="nombre-jugador-expulsado"></span> era <span id="rol-expulsado-texto"></span></p>
+            <button id="boton-continuar" class="boton-accion">Continuar</button>
+        </div>
+    </div>
+    <div id="contenedor">
+        <div id="contenedor-titulo">
+            <h1 id="titulo">Hora de eliminar</h1>
+            <p>!Discute a quien eliminar y luegotodos simultaneamente señalen con el dedo!</p>
+        </div>
+        <div id="contenedor-votos">
+            <div class="usuario" id="usuario-1">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-2">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-3">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-4">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-5">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-6">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-7">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-8">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-9">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="usuario" id="usuario-10">
+                <button class="boton-accion2">
+                    <img src="../assents/bear.svg" alt="">
+                    <p></p>
+                </button>
+            </div>
+        </div>
+        <div id="contenedor-finalizar" style="display: none;">
+            <div id="finalizar">
+                <h1>¡El juego ha terminado!</h1>
+                <h2 id="ganador">Ganan los <span></span></h2>
+                <h2 id="nombre-impostor">EL impostor era <span></span></h2>
+                <div id="contenedor-botones">
+                    <a href="../Inicio-juego/inicioJuego.html" class="boton-accion">Jugar de nuevo</a>
+                    <a href="../Configuracion/config.html" class="boton-accion">Configuracion</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- <button id="finalizar" class="boton-accion" style="display: none;">Finalizar</button> -->
+    </div>
+    <script src="/Inicio-juego/asignacion-rol.js"></script>
+    <script src="asignacion-rol.js"></script>
+    <script src="../main-logic.js"></script>
+    <script src="v-script.js"></script>
+
+</body>
+
+</html>

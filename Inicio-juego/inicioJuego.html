@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Juego</title>
+    <link rel="stylesheet" href="/Presentacion/P-style.css">
+    <link rel="stylesheet" href="/Inicio-juego/I-style.css">
+</head>
+
+<body>
+    <div id="cont-Informacion-jugador">
+        <div id="Informacion-jugador">
+            <p>Rol: </p>
+            <p id="rol">Tripulante</p><br>
+            <p>Categoria: </p>
+            <p id="categoria">Lugar</p><br>
+            <p>Palabra: </p>
+            <p id="palabra">Parque</p><br>
+            <button class="boton-accion" id="boton-siguiente-jugador">Siguiente jugador</button>
+        </div>
+    </div>
+    <a id="configuracion-boton" href="/Configuracion/config.html"><img src="../assents/arrow-left.svg" alt=""></a>
+    <div id="contenedor">
+        <div id="contenedor-titulo">
+            <h1 id="titulo">Elige una tarjeta</h1>
+            <div id="contenedor-jugador">
+                <p>Turno de
+                    <span id="jugador-actual" style="color: var(--color-tripulante)"></span>
+                </p>
+            </div>
+        </div>
+        <div id="contenedor-seleccion">
+            <a class="boton-accion" id="boton-votar" href="/votos/votos.html"
+                style="display: none; width: 70%;font-size: 1.5rem; ">Votar</a>
+            <div class="cartas" id="carta-1">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-2">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-3">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-4">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-5">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-6">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-7">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-8">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-9">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+            <div class="cartas" id="carta-10">
+                <div class="carta-cara carta-front">
+                    <img src="../assents/Gemini_Generated_Image_xf57s6xf57s6xf57.webp" alt="">
+                </div>
+                <div class="carta-cara carta-back">
+                    <img src="../assents/frente de carta.webp" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <script src="/Inicio-juego/asignacion-rol.js"></script>
+        <script src="../main-logic.js"></script>
+        <script src="asignacion-rol.js"></script>
+</body>
+
+</html>

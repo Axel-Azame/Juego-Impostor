@@ -1,0 +1,224 @@
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cont-Informacion-jugador {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Informacion-jugador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #374151;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#rol {
+    color: rgb(46, 149, 245);
+    font-size: 30px;
+}
+
+#categoria {
+    color: #fff;
+    font-size: 20px;
+}
+
+#palabra {
+    color: #2fff78;
+    font-size: 30px;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242b37;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px 0;
+
+
+}
+
+#contenedor h1 {
+    /* margin-bottom: 100px; */
+    font-size: 50px;
+    position: relative;
+}
+
+#titulo::after {
+    position: absolute;
+    bottom: -25px;
+    left: 0%;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to left, transparent, #dcd7d7, transparent);
+    margin-bottom: 20px;
+}
+
+#contenedor-jugador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-jugador p {
+    font-size: 30px;
+}
+
+#contenedor-seleccion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%/5), 1fr));
+    grid-template-rows: auto;
+    place-items: center;
+    perspective: 1000px;
+}
+
+.cartas {
+    position: relative;
+    width: 200px;
+    height: 275px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    display: none;
+}
+
+.carta-cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.carta-cara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carta-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+.carta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.cartas.rotar {
+    transform: rotateY(180deg);
+}
+
+
+
+@media (width < 1200px) {
+    #contenedor-seleccion {
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%/4), 1fr));
+    }
+}
+
+@media (width < 1000px) {
+    #contenedor-seleccion {
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%/3), 1fr));
+    }
+}
+
+@media (width < 950px) {
+    #contenedor-seleccion {
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%/3), 1fr));
+    }
+
+
+    .cartas {
+        width: 170px;
+        height: 240px;
+    }
+
+    @media (width < 540px) {
+        #contenedor-titulo {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        #configuracion-boton {
+            display: none;
+        }
+
+        .cartas {
+            /* width: 84px;
+            height: 114px; */
+            width: 130px;
+            height: 200px;
+        }
+
+        #contenedor-seleccion {
+            gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%/3), 1fr));
+            place-items: center;
+        }
+    }
+}

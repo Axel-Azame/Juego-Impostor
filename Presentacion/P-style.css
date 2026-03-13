@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fondo-color: #374151;
+    --fondo-second-color: #1e1e1e;
+    --color-Botones: #3b82f6;
+    --color-botones-hover: #2563eb;
+    --color-tripulante: #50b5ff;
+    --color-impostor: #ff4444;
+}
+
+body {
+    background-color: var(--fondo-color);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#configuracion-boton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#configuracion-boton img {
+    border: 1px;
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+#configuracion-boton:hover img {
+    transform: scale(1.10);
+}
+
+#version {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.5;
+}
+
+#advertencia {
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+#icono-config {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+}
+
+#configuracion-boton:hover #icono-config {
+    transform: rotate(90deg);
+}
+
+#container {
+    background-color: var(--fondo-second-color);
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.boton-accion {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-Botones);
+    color: white;
+    border: none;
+    margin: 40px 30px;
+    padding: 20px 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-accion:hover {
+    background-color: var(--color-botones-hover);
+}
+
+.boton-accion:active {
+    transform: scale(0.95);
+    background-color: var(--color-Botones);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+        padding: 20px;
+        margin: 10vh auto;
+    }
+
+    #configuracion-boton {
+        display: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .boton-accion {
+        margin: 20px 10px;
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+}
