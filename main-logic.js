@@ -83,7 +83,7 @@ function guardarConfig() {
     };
     localStorage.setItem('guard', JSON.stringify(datosJuego));
     setTimeout(() => {
-        window.location.href = '/Inicio-juego/inicioJuego.html';
+        window.location.href = 'Inicio-juego/inicioJuego.html';
     }, 2000);
 
 }
